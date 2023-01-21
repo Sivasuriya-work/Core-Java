@@ -1,0 +1,10 @@
+package JavaTrainingPrograms;
+
+public class MyClass {
+	public static void main(String[] args)
+	{
+		//Comparison operator 
+		
+		double randomValue  =  Math.random(); // return value between 0 to 1 in double
+		System.out.print(randomValue);
+}
