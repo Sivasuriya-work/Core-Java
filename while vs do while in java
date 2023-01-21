@@ -1,0 +1,22 @@
+package JavaTrainingPrograms;
+
+public class MyClass {
+	public static void main(String[] args)
+	{
+		///Break
+		int age = 0, votingAge = 18;
+		
+		while( age >= votingAge ) { // here,  condition is false 0 >= 18
+		 
+			System.out.println("You are eligible for voting - while block");
+			//loop print while condition is true
+		}
+			
+		do 
+		{
+			System.out.println("You are eligible for voting - do while block");
+			//loop execute at least one time  , if the condition is true or false
+		}while(age >= votingAge);
+		
+	}
+}		// output : You are eligible for voting - do while block
