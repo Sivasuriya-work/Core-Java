@@ -1,0 +1,15 @@
+package JavaTrainingPrograms;
+
+public class MyClass {
+	public static void main(String[] args)
+	{
+		double randomValue  =  Math.random(); // return value between 0 to 1 in double
+    
+		boolean isValue0To1 = (0<=randomValue) ? true : false; // Ternary oprator    
+    
+		System.out.print("The value is " + isValue0To1 + " : "+ randomValue); // print boolean value true
+    
+    
+		// output : The value is true : 0.936072707298084
+	}
+}
