@@ -1,0 +1,16 @@
+package JavaTrainingPrograms;
+
+public class MyClass {
+	public static void main(String[] args)
+	{
+			//casting in java
+		int myAge = 18;
+		double age = 19;
+		
+		// myAge = age ; // integer can't store the double value,
+			myAge = (int) age; // create of casting method
+			age = myAge; // double can store the integer value
+			System.out.println(myAge +"   "+age);
+			//o/p : 19   19.0
+	}
+}
