@@ -1,0 +1,29 @@
+package JavaTrainingPrograms;
+
+public class MyClass {
+	public static void main(String[] args)
+	{
+		///Break
+		int i = 0, j = 0;
+		while( i < 10) {
+			if(i == 5) {
+				break; // break the loop 
+				}
+			i++;
+		}
+		System.out.println("i = "+i); // output i = 5
+		
+		while(j < 10) {			
+			if(j == 5 ) {
+				j++;
+				continue; // loop will be continue from
+			}
+			j++;
+		}
+		System.out.print("j = "+j); // output j = 10
+		
+		//Output : 
+		// i = 5
+		//j = 10
+	}
+}
