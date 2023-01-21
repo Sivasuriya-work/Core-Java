@@ -1,0 +1,42 @@
+//JAVA program created in 1995;
+//Different kind of platform uses;
+//Open source and free;
+//Secure and fast and powerful;
+//OOP language;
+//System - class , out - method , println() - is a function
+//Case-sensitive like "MyClass" i  different "myclass";
+//main method;
+//statement end with semicolon;
+//variable is a container , storing different type of data;
+//primitive && non primitive;
+//float 6|7 digits fractions && double 15 digit fraction values;
+//char is a single character
+//String is sequence of character;
+//In casting method smaller data type can store in big data type , but not work in vice versa; 
+public class MyClass {
+	public static void main(String[] args)
+	{
+		String welcome = "Hi";
+		int inum = 1;
+		float fnum = 1;
+		char character = 'a';
+		boolean bool = true;
+		final int votingAge = 18;//variable name is integer , votingAge is a identifier;
+		//----;it should be easily understandable name
+		int baby = 1 , child = 5 , man =18;//multiple variable declare;
+		int x=  1 , y = 2 , z= 3 ;//declare multiple values 
+		int e,f, g ;
+		 e=f=g=50;//declare single value  to multiple variable; 
+		//votingAge = 21;  " we can't change the final variable value,only read only;
+		 //
+		System.out.println("Hello World");
+		System.out.println(1);
+		System.out.println(welcome);
+		System.out.println(inum);
+		System.out.println(fnum);
+		System.out.println(character);
+		System.out.println(bool);
+		System.out.println(votingAge);
+		System.out.println("End of the program.., Thank you!!!!");
+	}
+}
