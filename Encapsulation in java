@@ -1,0 +1,34 @@
+// MyClass.java
+
+package JavaTrainingPrograms;
+
+public class MyClass{	
+	public static void main(String[] args) {
+		//Encapsulation 
+		// to hide a sensitive content from a user 
+		//using getter and setter method to access the value
+		//the class will be private 
+		
+		PrivateClass pc = new PrivateClass();
+		//pc.setPassword("new Password");
+		System.out.print(pc.getPassword());
+		
+		
+	}
+		
+	}
+
+//PrivateClass.java
+package JavaTrainingPrograms;
+
+public class PrivateClass {
+	private String  password   = "Password";
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String pass) {
+		password = pass ; 
+	}
+	
+}
+
