@@ -1,0 +1,44 @@
+package JavaTrainingPrograms;
+
+public class Animal {
+public static void main(String[] args) {
+	//Abstract class is hide some vaues , it can only accessible by subclass;
+	Lion lion = new Lion();
+	lion.isAlive(); // static method
+	lion.isEat();
+	lion.isRun();
+	lion.isSleep();
+	lion .isHistory();//not a static method ,so create a object.
+	System.out.println("End of program");	
+		
+}
+}
+
+abstract class LionKing{
+	int eyes = 2  , legs = 4 , age = 2 ;
+	String animalName = "LionKing";
+	static Boolean alive = false ;
+	Boolean eat =  false;
+	Boolean run = false;
+	Boolean sleep  = false;
+	abstract void isEat();
+}
+class Lion extends LionKing {
+
+	
+	static void isAlive() {
+		alive = true ;
+	}
+	void isEat() {
+		eat = true ;
+	}
+	void isRun() {
+		run = true ;
+	}
+	void isSleep() {
+		sleep = true ;
+	}
+	void isHistory(){
+	System.out.println("The lion " + animalName +" Details  : " +" \nName is : "+animalName+"\nAlive : "+alive+"\n Eat : "+eat+"\nRun : "+run+"\nSleep : "+sleep);
+	}
+}
