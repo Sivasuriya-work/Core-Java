@@ -1,0 +1,48 @@
+package JavaTrainingPrograms;
+
+public class MyClass extends MethodTest{	 
+	public static void main(String[] args)
+	{
+		//Method in java
+		//methodName () // passing without parameter
+		//methodName (variableType variableName) // passing with parameter
+		
+		/* methodName overloading  - same method name with different parameters;  
+		 * myMethod(int age);
+		 * myMethod(double age); */
+		
+		/* method overriding  - same method with same parameters ;
+			myMethod(int age);
+			myMethod(int age);
+		
+		*/
+		
+		
+		MyClass obj = new MyClass();
+		MethodTest methodObj = new MethodTest();
+		obj.myMethod(); // if the method is not in child class inherited from parent; 
+		obj.myMethod(2);	 
+	}
+	void myMethod(int no) {		 
+		System.out.println("Method from  - MyClass - "+ "The passed number is " + no);		
+	}
+  /* void myMethod() {		 
+		System.out.println("Method from  - MyClass - no parameter");
+	}	*/	
+	}	
+
+class MethodTest{	
+	void myMethod() {
+		System.out.println("Method from  - MethodTest - without parameter" + " The number is ");
+	}
+	 void myMethod(int no) {
+		 System.out.println("Method from  - MethodTest - with parameter" + " The passed number is " + no);	
+	 	}
+	 }
+	
+
+
+	// output :  Method from  - MethodTest - without parameter The number is 
+				//Method from  - MyClass - The passed number is 2
+
+
