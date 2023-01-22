@@ -1,0 +1,36 @@
+package JavaTrainingPrograms;
+
+public class MyClass{	
+	
+	int votingAge;	
+	
+	public MyClass(){
+		System.out.println("Constructor called  - with no parameter");
+	}
+	
+	public MyClass(int age) {
+		System.out.println("Constructor called  - with parameter");		
+	}
+	
+	public static void main(String[] args)
+	{
+		// Constructor in java
+		 // Constructor name is same as class name;
+		//To  call & initialize the values when the object is created;
+		//All class program have default constructor created by java.
+		// If you want can create one with  or without parameter constructor;
+		
+		MyClass objDC = new MyClass();
+		MyClass objPC = new MyClass(18);
+		
+		System.out.println("End of the program");
+		
+		//output: 
+		//Constructor called  - with no parameter
+		//Constructor called  - with parameter
+		//End of the program
+
+		
+	}
+
+}
