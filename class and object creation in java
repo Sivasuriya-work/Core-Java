@@ -1,0 +1,53 @@
+package JavaTrainingPrograms;
+
+public class Animal {
+public static void main(String[] args) {
+//	java oop is DRY  - reduce repetition of code ; 
+		// two main aspects  -
+		//1.class - template for object 
+		//2.object - instance for a class
+		// if Animal  is a class
+		// then lion , tiger are objects.
+		 // object is created from a class
+		// animal lion = new animal(); // 
+		// lion have a values and functions //lion is aa object
+		// two eyes  , four legs // these or values like lion.eyes = 2 ; lion.legs = 4;
+		// eating , sleeping , attacking // these are functions like lion.eat()  , lion.sleep() ;
+		// lion.eat() // it is lion objects function
+		//
+	Lion  lion = new Lion();
+	lion.isAlive();
+	lion.isHistory();
+	System.out.println("End of program");	
+		
+}
+}
+
+class Lion{
+	int eyes = 2  , legs = 4 , age = 2 ;
+	String animalName = "LionKing";
+	Boolean alive = false , eat =  false , run = false , sleep  = false ;
+	void isAlive() {
+		alive = true ;
+	}
+	void isEat() {
+		eat = true ;
+	}
+	void isRun() {
+		run = true ;
+	}
+	void isSleep() {
+		sleep = true ;
+	}
+	void isHistory(){
+	System.out.println("The lion " + animalName +" Details  : " +" \nName is : "+animalName+"\nAlive : "+alive+"\n Eat : "+eat+"\nRun : "+run+"\nSleep : "+sleep);
+	}
+	/*The lion LionKing Details  :  
+Output : 
+Name is : LionKing
+Alive : true
+ Eat : false
+Run : false
+Sleep : false
+End of program
+*/
