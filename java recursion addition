@@ -1,0 +1,25 @@
+package JavaTrainingPrograms;
+
+public class MyClass{	 
+	public static void main(String[] args)
+	{
+	
+		// java recursion  - addition using java recursion
+		//
+		int number = 10 ; 
+		MyClass myClass = new MyClass();
+		int add	= myClass.findRecursionAdd(number); // store in 
+		System.out.print(add);
+	}	
+	
+	 int findRecursionAdd(int number) {
+		 if(number>0) {
+		return number + (findRecursionAdd(number-3));
+		 }
+		 else {
+			 
+			 return 0;
+		 }
+		
+	}
+	}
