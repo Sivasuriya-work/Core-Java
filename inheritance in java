@@ -1,0 +1,43 @@
+package JavaTrainingPrograms;
+
+public class Animal extends Lion {
+public static void main(String[] args) {
+	//Modifier
+	
+	//Access Modifier
+	//Public - all  class are accessible
+	//default  - package class are accessible
+	//protected - parent and child relation accessible
+	//private  - within the class only accessible , here using getter setter to get the values;
+	//Non - access - modifier ; 
+	//final  - can't inherited from other subclasses , 
+	//But from other class create object and access ,but can't change the value
+	//
+	Animal lion = new Animal();
+	lion.isAlive();
+	lion.isHistory();
+	System.out.println("End of program");	
+		
+}
+}
+
+class Lion{
+	int eyes = 2  , legs = 4 , age = 2 ;
+	String animalName = "LionKing";
+	Boolean alive = false , eat =  false , run = false , sleep  = false ;
+	void isAlive() {
+		alive = true ;
+	}
+	void isEat() {
+		eat = true ;
+	}
+	void isRun() {
+		run = true ;
+	}
+	void isSleep() {
+		sleep = true ;
+	}
+	void isHistory(){
+	System.out.println("The lion " + animalName +" Details  : " +" \nName is : "+animalName+"\nAlive : "+alive+"\n Eat : "+eat+"\nRun : "+run+"\nSleep : "+sleep);
+	}
+}
