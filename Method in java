@@ -1,8 +1,9 @@
 package JavaTrainingPrograms;
 
 public class MyClass {
-	static int age = 22 ;
-	int votingAge = 18; 
+	static int age ;
+	static final int votingAge = 18; ;
+	 
 	public static void main(String[] args)
 	{
 		//Method in java
@@ -18,6 +19,8 @@ public class MyClass {
 			myMethod(int age);
 		
 		*/
+		age = 18;
+		
 		
 		MyClass obj = new MyClass();
 		obj.myMethod();
@@ -26,7 +29,7 @@ public class MyClass {
 		 
 	}
 	void myMethod() {
-		if(age>=votingAge) {
+		if(age >= votingAge) {
 			System.out.println("Eligible to vote - method without parameter");
 		}
 		else {
@@ -47,3 +50,4 @@ public class MyClass {
 
 	// output :Eligible to vote - method without parameter
 			//Eligible to vote - with parameter
+
