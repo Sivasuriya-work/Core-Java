@@ -1,0 +1,49 @@
+package JavaTrainingPrograms;
+
+public class MyClass {
+	static int age = 22 ;
+	int votingAge = 18; 
+	public static void main(String[] args)
+	{
+		//Method in java
+		//methodName () // passing without parameter
+		//methodName (variableType variableName) // passing with parameter
+		
+		/* methodName overloading  - same method name with different parameters;  
+		 * myMethod(int age);
+		 * myMethod(double age); */
+		
+		/* method overriding  - same method with same parameters ;
+			myMethod(int age);
+			myMethod(int age);
+		
+		*/
+		
+		MyClass obj = new MyClass();
+		obj.myMethod();
+		obj.myMethod(age);
+		
+		 
+	}
+	void myMethod() {
+		if(age>=votingAge) {
+			System.out.println("Eligible to vote - method without parameter");
+		}
+		else {
+			System.out.println("Not eligible to vote");
+		}
+		
+	}
+	 void myMethod(int age) {
+			if(age>=votingAge) {
+				System.out.println("Eligible to vote - with parameter");
+			}
+			else {
+				System.out.println("Not eligible to vote");
+			}		
+	 	}
+	}
+
+
+	// output :Eligible to vote - method without parameter
+			//Eligible to vote - with parameter
