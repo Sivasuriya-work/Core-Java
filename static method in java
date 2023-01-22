@@ -1,0 +1,37 @@
+package JavaTrainingPrograms;
+
+public class Animal extends Lion {
+public static void main(String[] args) {
+	//static method is no need to create an object to access the method;
+  
+	Animal lion = new Animal();
+	isAlive(); // static method
+	lion .isHistory();//not a static method ,so create a object.
+	System.out.println("End of program");	
+		
+}
+}
+
+class Lion{
+	int eyes = 2  , legs = 4 , age = 2 ;
+	String animalName = "LionKing";
+	static Boolean alive = false ;
+	Boolean eat =  false;
+	Boolean run = false;
+	Boolean sleep  = false;
+	static void isAlive() {
+		alive = true ;
+	}
+	void isEat() {
+		eat = true ;
+	}
+	void isRun() {
+		run = true ;
+	}
+	void isSleep() {
+		sleep = true ;
+	}
+	void isHistory(){
+	System.out.println("The lion " + animalName +" Details  : " +" \nName is : "+animalName+"\nAlive : "+alive+"\n Eat : "+eat+"\nRun : "+run+"\nSleep : "+sleep);
+	}
+}
