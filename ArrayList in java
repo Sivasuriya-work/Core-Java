@@ -1,0 +1,33 @@
+package JavaTrainingPrograms;
+import java.util.ArrayList;
+import java.util.Collections;
+//import java.util.Scanner;
+
+public class MyClass extends SuperClass{	
+	public static void main(String[] args) {
+  
+  
+		//ArrayList in java
+		//ArrayList is can (resize able) modify 
+		//It is easy to add and remove element
+		//The util package contains arraylist
+		//create a arraylist
+		
+		ArrayList<String> animal = new ArrayList<String>();
+		animal.add("lion");
+		animal.add("Tiger");
+		animal.add("Zebra");
+		animal.add("Giraffe");
+		animal.add("elephant");
+		System.out.println("\n"+animal + "\n"+animal.set(0 , "Monkey")+"\n" + animal +"\n"+animal.remove(0) ); 
+    
+		Collections.sort(animal);
+		System.out.println(animal); / / same list
+    
+		for(String i : animal) {
+			System.out.println(i);
+			
+		}
+		
+}
+}
