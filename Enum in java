@@ -1,0 +1,37 @@
+package JavaTrainingPrograms;
+
+//Enum in java using inheritance
+
+public class MyClass extends SuperClass{	
+	public static void main(String[] args) {
+		MyClass sp = new MyClass(); // SuperClass object;
+		String name = "Child";
+		sp.study();		
+	}
+	void study() {
+		System.out.println(name +"Studying - child class"); // name value inherited from parent
+		super.study();		
+	}	
+}
+package JavaTrainingPrograms;
+import java.time.LocalDateTime;
+public class SuperClass {
+	String name = "Father";
+	enum Eday{
+		MON,
+		TUE,
+		WED,
+		THU, 
+		FRI,
+		SAT,
+		SUN
+	}
+
+	void study() {
+		Eday day  = Eday .MON;
+	
+		System.out.println(name + " Studying..."  + day);
+	}
+	
+
+}
