@@ -1,0 +1,67 @@
+package JavaTrainingPrograms;
+
+import java.util.Scanner;
+
+public class MyClass{	
+	public static void main(String[] args) {
+			//	Scanner class
+			// Get the user input
+			//
+		MyClass op = new MyClass();
+		Scanner sc =new Scanner(System.in);
+		System.out.println("Hi ... ! What's your name  ? ");
+		String name = sc.nextLine();
+		doChooseOptions(name);
+		
+	
+	}	
+		void doOperations(int option , String name ) {			 
+				switch(option){
+						case 1: 
+							doPlayMusic();
+							System.out.println("Do you want to continue : ");
+							doChooseOptions(name);
+							break ; 
+						case 2:
+							doPlayVideo();
+							System.out.println("Do you want to continue : ");
+							doChooseOptions(name);
+							break;
+						case 3:
+							doPlayGames();
+							System.out.println("Do you want to continue : ");
+							doChooseOptions(name);
+							break;
+						case 4:
+							System.out.println("Exit");
+							break;
+						default : 
+							System.out.println("Enter correct number");
+							doChooseOptions(name);
+				}
+						
+					}
+			private void doPlayGames() {
+				System.out.println("Playing Games done...");
+				
+			}
+
+			private void doPlayVideo() {
+				System.out.println("Playing Video done...");
+				
+			}
+
+			private void doPlayMusic() {
+				System.out.println("Playing music done...");		
+			}
+
+			static public void doChooseOptions(String name) {
+				System.out.println("Welcome " + name + " ! \nWhat do you want ? ");
+				System.out.println("\nEnter the number of choice you want : \n 1. Play Music \n 2.Play video \n 3.Play games \n4.Exit ");
+				int option = new Scanner(System.in).nextInt();
+				new MyClass().doOperations(option , name); 
+			}
+
+			
+	
+}
